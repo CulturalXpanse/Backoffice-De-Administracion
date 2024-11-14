@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--body-color);
+    transition: background 0.3s;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--nav-color);
+    color: var(--letras);
+    padding: 5px 5%;
+}
+.logo {
+    width: 160px;
+    margin-right: 45px;
+}
+.nav-left, .nav-right{
+    display: flex;
+    align-items: center;
+}
+.nav-right ul li {
+    list-style: none;
+    display: inline-block;
+}
+.nav-right ul li i {
+    width: 28px;
+    margin: 0 15px;
+    color: var(--nav-iconos);
+}
+.nav-user-icon {
+    margin-left: 30px;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 0.1px solid var(--circulo-perfil);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-user-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.search-box {
+    background-color: #efefef;
+    width: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    transform: border 0.3s;
+}
+.search-box img {
+    width: 18px;
+}
+.search-box input {
+    width: 100%;
+    background-color: transparent;
+    padding: 10px;
+    outline: none;
+    border: 0;
+}
+.search-box:focus-within{
+    border: 0.1rem solid #B0FE76;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5%;
+    flex-wrap: wrap;
+}
+.left-sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    flex-basis: 25%;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+
+}
+.right-sidebar {
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    background-color: var(--bg-color);
+    padding: 20px;
+    border-radius: 4px;
+    color: #626262;
+}
